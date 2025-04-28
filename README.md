@@ -1,6 +1,6 @@
-# VR/AR Interaction Guidelines
+# VR/AR/XR Interaction Guidelines
 
-This document outlines a community-molded list of details that make good VR/AR interactions. It is a collection of structures to make good interactions within the virtual, augmented & mixed reality world. Periodically updated and community of daily VR & AR users. Some of these may be subjective, but most apply to all websites.
+This document outlines a community-molded list of details that make good VR/AR/XR interactions. It is a collection of structures to make good interactions within the virtual, augmented & mixed reality world. Periodically updated based on community and standards. Some of these may be subjective, but most apply to all interactions.
 
 Contributions are welcome. Edit [this file](README.md) and submit a pull request.
 
