@@ -6,30 +6,26 @@ Contributions are welcome. Edit [this file](README.md) and submit a pull request
 
 ## Interactivity
 
-- Clicking the input label should focus the input field
-- Inputs should be wrapped with a `<form>` to submit by pressing Enter
-- Inputs should have an appropriate `type` like `password`, `email`, etc
-- Inputs should disable `spellcheck` and `autocomplete` attributes most of the time
-- Inputs should leverage HTML form validation by using the `required` attribute when appropriate
-- Input prefix and suffix decorations, such as icons, should be absolutely positioned on top of the text input with padding, not next to it, and trigger focus on the input
-- Toggles should immediately take effect, not require confirmation
-- Buttons should be disabled after submission to avoid duplicate network requests
-- Interactive elements should disable `user-select` for inner content
-- Decorative elements (glows, gradients) should disable `pointer-events` to not hijack events
-- Interactive elements in a vertical or horizontal list should have no dead areas between each element, instead, increase their `padding`
+- Generally, your body and objects should **not** break any laws of physics unless it's on purpose
+- - it's ok to be able to pass through a slime, it isn't to pass your hand through solid bricks
+
+## Imersion
+
+- Mimic as most real life physics as possible
+- Sound physics can help in accessibility and immersion
 
 ## Typography
 
-- Fonts should have `-webkit-font-smoothing: antialiased` applied for better legibility
-- Fonts should have `text-rendering: optimizeLegibility` applied for better legibility
+- Fonts should have some sort of smoothing applied for better legibility
 - Fonts should be subset based on the content, alphabet or relevant language(s)
-- Font weight should not change on hover or selected state to prevent layout shift
-- Font weights below 400 should not be used
+- Font weights below 200 should not be used
 - Medium sized headings generally look best with a font weight between 500-600
 - Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
-- Where available, tabular figures should be applied with `font-variant-numeric: tabular-nums`, particularly in tables or when layout shifts are undesirable, like in timers
-- Prevent text resizing unexpectedly in landscape mode on iOS with `-webkit-text-size-adjust: 100%`
+- Prevent text resizing unexpectedly
 
+## Sound
+
+- Aplying sound physics and reverbs to your audio
 
 ## Motion
 
