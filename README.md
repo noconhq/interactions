@@ -4,24 +4,30 @@ This document outlines a community-molded list of details that make good VR/AR/X
 
 Contributions are welcome. Edit [this file](README.md) and submit a pull request.
 
-## Interactivity
-
-- Generally, your body and objects should **not** break any laws of physics unless it's on purpose
-- - it's ok to be able to pass through a slime, it isn't to pass your hand through solid bricks
-
 ## Imersion
 
 - Mimic as most real life physics as possible
 - Sound physics can help in accessibility and immersion
 
-## Typography
+## Interactivity
 
+- Generally, your body and objects should **not** break any laws of physics unless it's on purpose
+- - it's ok to be able to pass through a slime, it isn't to pass your hand through solid bricks
+- Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
 - Fonts should have some sort of smoothing applied for better legibility
 - Fonts should be subset based on the content, alphabet or relevant language(s)
 - Font weights below 200 should not be used
-- Medium sized headings generally look best with a font weight between 500-600
-- Adjust values fluidly by using CSS [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp), e.g. `clamp(48px, 5vw, 72px)` for the `font-size` of a heading
 - Prevent text resizing unexpectedly
+
+## Design
+
+- Optimistically update data locally and roll back on server error with feedback
+- Authentication redirects should happen on the server before the client loads to avoid janky URL changes
+- Style the document selection state with `::selection`
+- Display feedback relative to its trigger:
+  - Show a temporary inline checkmark on a successful copy, not a notification
+  - Highlight the relevant input(s) on form error(s)
+- Empty states should prompt to create a new item, with optional templates
 
 ## Sound
 
@@ -74,17 +80,6 @@ Contributions are welcome. Edit [this file](README.md) and submit a pull request
 - Illustrations built with HTML should have an explicit `aria-label` instead of announcing the raw DOM tree to people using screen readers
 - Gradient text should unset the gradient on `::selection` state
 - When using nested menus, use a "prediction cone" to prevent the pointer from accidentally closing the menu when moving across other elements.
-
-
-## Design
-
-- Optimistically update data locally and roll back on server error with feedback
-- Authentication redirects should happen on the server before the client loads to avoid janky URL changes
-- Style the document selection state with `::selection`
-- Display feedback relative to its trigger:
-  - Show a temporary inline checkmark on a successful copy, not a notification
-  - Highlight the relevant input(s) on form error(s)
-- Empty states should prompt to create a new item, with optional templates
 
 [^1]: Switching between dark mode or light mode will trigger transitions on elements that are meant for explicit interactions like hover. We can [disable transitions temporarily](https://paco.me/writing/disable-theme-transitions) to prevent this. For Next.js, use [next-themes](https://github.com/pacocoursey/next-themes) which prevents transitions out of the box.
 [^2]: This is a matter of taste but some interactions just feel better with no motion. For example, the native macOS right click menu only animates out, not in, due to the frequent usage of it.
