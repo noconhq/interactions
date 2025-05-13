@@ -6,30 +6,29 @@ Contributions are welcome. Edit [this file](README.md) and submit a pull request
 
 ## Immersion
 
-- Mimic as most real-life physics as possible
+- Mimic as most real-life physics as possible.
 - Use realistic scale and 1:1 proportion if possible, unless a stylized scale is a deliberate design choice.
-- Avoid floating, detached, or screen-fixed UI elements
+- Avoid floating, detached, or screen-fixed UI elements.
 - Always design with 3D space in mind—depth, occlusion, and spatial relationships matters.
 - Match environment lighting, shadows, and atmospheric effects to user expectations and the context of the experience.
 - Reactions from the world should feel grounded (e.g., footsteps on different surfaces, hand collisions).
 
 ## Interactivity
 
-- Your body and objects should **not** break any laws of physics or ui/game mechanics unless intentional [^1]
-- Grabs, throws, touches and other interactions should react instantly and make sense within ui/game mechanics and physics
-- Actions require visual, auditory, and/or haptic feedback.
+- Your body and objects should **not** break any game physics and/or ui/game mechanics unless intentional. [^1]
+- Grabs, throws, touches and other interactions should react instantly and make sense within ui/game mechanics and physics.
+- Actions require feedback either visual, auditory, and/or haptic.
 - - The type and intensity of feedback should match the action's importance and context.
-- Avoid complex gestures that are hard to repeat
 - Avoid complex or overly precise gestures that are difficult to learn or perform.
 - Interactions should be forgiving of minor inaccuracies but not feel floaty, imprecise, or unresponsive.
 - - Implement smart snapping or assistance where it enhances usability without feeling restrictive.
-- Consider context of use if the user is standing, seated, or moving.
+- Consider actions context, if the user is standing, seated, or moving.
 - - Design interactions that are appropriate for the expected user posture and activity level.
 
 ## Design
 
 - Fonts should have some sort of smoothing (e.g., anti-aliasing) and contrast for clear legibility.
-- Fonts should be subset based on the content, alphabet or relevant language(s)
+- Fonts should be subset based on the content, alphabet or relevant language(s).
 - Maintain a visual hierarchy using size, distance, contrast, color, and placement to guide user's attention. [^2]
 - Avoid extremely thin font weights (e.g., below 200) as they can be difficult to read in VR/AR/XR displays.
 - Prevent text from resizing, jittering, or moving unexpectedly.
@@ -45,13 +44,12 @@ Contributions are welcome. Edit [this file](README.md) and submit a pull request
 - Confirm actions with subtle, satisfying audio cues. Overly loud or jarring sounds can be unpleasant.
 - Avoid repetitive, annoying, or easily fatiguing [sound loops/fatigue](https://www.youtube.com/watch?v=GNzUFyuZtWM)
 - Match volume levels and audio effects to the virtual environment, event significance, and distance from the sound source.
-- Give users volume control for everything [^3]
+- Give users volume control for everything. [^3]
 
 ## Motion
 
 - Avoid unexpected, uncontrolled, or forced camera movements [^4]
 - Provide multiple locomotion options such as teleportation, smooth locomotion (with adjustable speed), and arm-swing based movement.
-- Allow users to rotate in increments (snap turn)
 - Allow users to rotate their view in increments (snap turn) as well as smooth rotation, with adjustable speeds for both.
 - Reduce or carefully manage motion acceleration and deceleration to minimize nausea.
 - Maintain 1:1 tracking for hand and objects movement relative to the real-world motion.
