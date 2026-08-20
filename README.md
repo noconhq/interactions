@@ -6,17 +6,17 @@ Contributions are welcome. Edit [this file](README.md) and submit a pull request
 
 ## Immersion
 
-- Mimic as most real-life physics as possible.
-- Use realistic scale and 1:1 proportion if possible, unless a stylized scale is a deliberate design choice.
+- Mimic real-life physics as much as possible.
+- Aim for realistic scale and/or 1:1 proportion, unless a stylized scale is a deliberate design choice.
 - Avoid floating, detached, or screen-fixed UI elements.
-- Always design with 3D space in mind—depth, occlusion, and spatial relationships matters.
+- Always design with 3D space in mind. Depth, occlusion, and spatial relationships matters.
 - Match environment lighting, shadows, and atmospheric effects to user expectations and the context of the experience.
-- Reactions from the world should feel grounded (e.g., footsteps on different surfaces, hand collisions).
+- Reactions from the world should feel grounded (e.g., footsteps on different surfaces, hand collisions, material interactions).
 
 ## Interactivity
 
-- Your body and objects should **not** break any game physics and/or ui/game mechanics unless intentional. [^1]
-- Grabs, throws, touches and other interactions should react instantly and make sense within ui/game mechanics and physics.
+- Your body and objects should **not** break any game physics and/or UI/game mechanics unless intentional. [^1]
+- Grabs, throws, touches and other interactions should react instantly and make sense within UI/game mechanics and physics.
 - Actions require feedback either visual, auditory, and/or haptic.
 - - The type and intensity of feedback should match the action's importance and context.
 - Avoid complex or overly precise gestures that are difficult to learn or perform.
